@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.mohan.myandroid.MainActivity">
+
+    <CheckBox
+        android:id="@+id/tea"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="62dp"
+        android:onClick="onClicked"
+        android:text="Tea"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <CheckBox
+        android:id="@+id/milk"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="onClicked"
+        android:text="Milk"
+        android:layout_below="@+id/tea"
+        android:layout_alignRight="@+id/tea"
+        android:layout_alignEnd="@+id/tea" />
+
+    <TextView
+        android:id="@+id/MyTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        android:textSize="30sp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignRight="@+id/juice"
+        android:layout_alignEnd="@+id/juice"
+        android:layout_marginBottom="84dp" />
+
+    <CheckBox
+        android:id="@+id/coffee"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:onClick="onClicked"
+        android:text="coffee"
+        android:layout_below="@+id/milk"
+        android:layout_alignLeft="@+id/tea"
+        android:layout_alignStart="@+id/tea" />
+
+    <CheckBox
+        android:id="@+id/juice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:onClick="onClicked"
+        android:text="juice"
+        android:layout_below="@+id/coffee"
+        android:layout_alignRight="@+id/milk"
+        android:layout_alignEnd="@+id/milk" />
+
+    <CheckBox
+        android:id="@+id/fruits"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="onClicked"
+        android:text="fruits"
+        android:layout_below="@+id/juice"
+        android:layout_alignRight="@+id/juice"
+        android:layout_alignEnd="@+id/juice"
+        android:layout_marginTop="35dp" />
+
+    <CheckBox
+        android:id="@+id/other"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/milk"
+        android:layout_alignStart="@+id/milk"
+        android:layout_below="@+id/fruits"
+        android:layout_marginTop="30dp"
+        android:onClick="onClicked"
+        android:text="other " />
+</RelativeLayout>
