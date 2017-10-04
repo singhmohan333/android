@@ -1,3 +1,13 @@
 <resources>
     <string name="app_name">CoffeeApp</string>
+    <string name="applogo">CoffeeApp</string>
+
+    <string-array name="options">
+        <item> Drinks</item>
+        <item> Food </item>
+        <item>other </item>
+
+    </string-array>
+    <string name="title_activity_drink">DrinkActivity</string>
+
 </resources>

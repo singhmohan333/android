@@ -10,8 +10,8 @@ public class Drinks {
 
     public static final Drinks[] drinks = {
             new Drinks("caffee","this is for coffee",R.drawable.cof1),
-            new Drinks("caffee","this is for cup",R.drawable.cof2),
-            new Drinks("caffee","this is for drink",R.drawable.cof3),
+            new Drinks("cup","this is for cup",R.drawable.cof2),
+            new Drinks("Drink","this is for drink",R.drawable.cof3),
 
     };
 
@@ -32,6 +32,8 @@ public class Drinks {
 
         return imageID;
     }
-
+    public String toString(){
+        return this.name;
+    }
 
 }
