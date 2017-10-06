@@ -1,5 +1,6 @@
 package com.example.mohan.actionb;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
@@ -44,7 +45,17 @@ public class MainActivity extends AppCompatActivity {
 
         //noinspection SimplifiableIfStatement
         if (id == R.id.action_settings) {
-            return true;
+            Intent intent = new Intent(this , order.class);
+            startActivity(intent);
+        }
+       else if (id == R.id.order_action) {
+            Intent intent = new Intent(this , order.class);
+            startActivity(intent);
+        }
+
+        else if (id == R.id.homedelvery) {
+            Intent intent = new Intent(this , HomeDelivery.class);
+            startActivity(intent);
         }
 
         return super.onOptionsItemSelected(item);

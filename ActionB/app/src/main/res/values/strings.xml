@@ -1,6 +1,8 @@
 <resources>
-        <string name="app_name">ActionB</string>
-        <string name="action_settings">Settings</string>
-        <string name="order_action">Order Action</string>
+    <string name="app_name">ActionB</string>
+    <string name="action_settings">Settings</string>
+    <string name="order_action">Order Action</string>
     <string name="title_activity_order">order</string>
+    <string name="title_activity_home_delivery">HomeDelivery</string>
+    <string name="delivery">delivery</string>
 </resources>

@@ -14,4 +14,11 @@
         android:title="@string/order_action"
         app:showAsAction="ifRoom"
         android:icon="@drawable/iconn"/>
+
+    <item
+        android:id="@+id/homedelvery"
+        android:orderInCategory="2"
+        android:title="@string/delivery"
+        app:showAsAction="ifRoom"
+        android:icon="@drawable/icccc"/>
 </menu>
