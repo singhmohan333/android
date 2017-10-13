@@ -4,9 +4,89 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@android:color/background_dark"
+    android:background="@android:color/darker_gray"
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
     tools:context="com.example.mohan.asmtech.Navigation"
     tools:showIn="@layout/app_bar_navigation">
 
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="47dp"
+        app:srcCompat="@drawable/igigi" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+
+        android:layout_below="@+id/imageView3"
+        android:layout_marginTop="25dp"
+        android:background="#000000"
+        android:onClick="onGallery"
+        android:text="View gallery"
+        android:textColor="#ffffff"
+        android:textSize="20sp" />
+
+
+    <Button
+        android:id="@+id/button4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/button2"
+        android:layout_alignLeft="@+id/button2"
+        android:layout_alignRight="@+id/button2"
+        android:layout_alignStart="@+id/button2"
+        android:layout_below="@+id/button2"
+        android:layout_marginTop="21dp"
+        android:background="#000000"
+        android:onClick="ourLocation"
+        android:text="Our Location"
+        android:textColor="#ffffff"
+        android:textSize="20sp" />
+
+    <Button
+        android:id="@+id/button5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/button6"
+        android:layout_alignLeft="@+id/button6"
+        android:layout_alignRight="@+id/button6"
+        android:layout_alignStart="@+id/button6"
+        android:layout_below="@+id/button4"
+        android:layout_marginTop="16dp"
+        android:background="#000000"
+        android:onClick="onDetail"
+        android:text="Detail"
+        android:textColor="#ffffff"
+        android:textSize="20sp" />
+
+    <Button
+        android:id="@+id/button6"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/button5"
+        android:layout_marginTop="15dp"
+        android:background="#000000"
+        android:onClick="contactUs"
+        android:text="Contact Us"
+        android:textColor="#ffffff"
+        android:textSize="20sp" />
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/button6"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="19dp"
+        android:onClick="onClicka"
+        android:text="BACK" />
 </RelativeLayout>

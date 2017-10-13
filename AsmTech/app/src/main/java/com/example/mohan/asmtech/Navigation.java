@@ -1,5 +1,6 @@
 package com.example.mohan.asmtech;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
@@ -20,8 +21,14 @@ public class Navigation extends AppCompatActivity
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_navigation);
+
+
+
+
+
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
+
 
         FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
         fab.setOnClickListener(new View.OnClickListener() {
@@ -74,6 +81,8 @@ public class Navigation extends AppCompatActivity
         return super.onOptionsItemSelected(item);
     }
 
+
+
     @SuppressWarnings("StatementWithEmptyBody")
     @Override
     public boolean onNavigationItemSelected(MenuItem item) {
@@ -81,21 +90,62 @@ public class Navigation extends AppCompatActivity
         int id = item.getItemId();
 
         if (id == R.id.viewgallery) {
-            // Handle the camera action
+            Intent intent = new Intent(this, Gallery.class);
+            startActivity(intent);
+
         } else if (id == R.id.ourlocation) {
-
+            Intent intent = new Intent(this, Map.class);
+            startActivity(intent);
         } else if (id == R.id.detail) {
-
+            Intent intent = new Intent(this, Test.class);
+            startActivity(intent);
         } else if (id == R.id.contactus) {
-
+            Intent intent = new Intent(this, Main2Activity.class);
+            startActivity(intent);
         } else if (id == R.id.nav_share) {
-
+            Intent intent = new Intent(this, Gallery.class);
+            startActivity(intent);
         } else if (id == R.id.nav_send) {
-
+            Intent intent = new Intent(this, Gallery.class);
+            startActivity(intent);
         }
+
+
 
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
         drawer.closeDrawer(GravityCompat.START);
         return true;
+    }
+
+
+    public void onGallery(View view){
+        Intent intent = new Intent(this, Gallery.class);
+        startActivity(intent);
+
+    }
+
+    public void onClicka(View view){
+        Intent intent = new Intent(this, MainActivity.class);
+                startActivity(intent);
+
+    }
+
+    public void ourLocation(View view){
+        Intent intent = new Intent(this, Map.class);
+        startActivity(intent);
+
+    }
+
+    public void onDetail(View view){
+        Intent intent = new Intent(this, Test.class);
+        startActivity(intent);
+
+    }
+
+
+    public void contactUs(View view){
+        Intent intent = new Intent(this, Main2Activity.class);
+        startActivity(intent);
+
     }
 }
