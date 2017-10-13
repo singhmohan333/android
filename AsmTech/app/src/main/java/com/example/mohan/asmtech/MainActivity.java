@@ -41,10 +41,10 @@ public class MainActivity extends AppCompatActivity {
         String email = et1.getText().toString();
         String pass = et2.getText().toString();
 
-        String oemail="monu";
-        String opass="monu";
+//        String oemail="";
+     //String opass="monu";
 
-        if (email.equals(oemail) && pass.equals(opass))
+        if (email.equals(pass) && pass.equals(email))
         {
             Intent intent = new Intent(this, Navigation.class);
             startActivity(intent);
